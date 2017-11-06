@@ -1,2 +1,0 @@
-# QuickHotkey
-HUMAN SENTIPETE
