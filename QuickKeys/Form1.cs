@@ -32,9 +32,13 @@ namespace QuickKeys
             {
                 Pegelschrieb();
             }
-            else
+            if (radioButton2.Checked)
             {
                 Distribution();
+            }
+            if (radioButton3.Checked)
+            {
+                PDF();
             }
             button1.Enabled = true;
         }
@@ -44,6 +48,37 @@ namespace QuickKeys
         private int longTimeOut = 4000;
         private int superlongTimeout = 8000;
         private string docname;
+
+        private void PDF()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+
+                input.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+                Thread.Sleep(longTimeOut);
+                input.Keyboard.KeyPress((VirtualKeyCode) Keys.LMenu); //ALT
+                Thread.Sleep(timeout);
+                input.Keyboard.KeyPress(VirtualKeyCode.VK_D);
+                Thread.Sleep(timeout);
+                input.Keyboard.KeyPress(VirtualKeyCode.VK_T);
+                Thread.Sleep(timeout);
+                input.Keyboard.KeyPress(VirtualKeyCode.TAB);
+                Thread.Sleep(timeout);
+                input.Keyboard.KeyPress(VirtualKeyCode.VK_P);
+                Thread.Sleep(timeout);
+                input.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+                Thread.Sleep(longTimeOut * 2);
+
+                input.Keyboard.ModifiedKeyStroke((VirtualKeyCode)Keys.LMenu, VirtualKeyCode.TAB);
+                Thread.Sleep(timeout);
+                input.Keyboard.KeyPress(VirtualKeyCode.DOWN);
+                Thread.Sleep(timeout);
+                input.Keyboard.KeyPress(VirtualKeyCode.DOWN);
+                Thread.Sleep(timeout);
+
+            }
+        }
+
 
         private void Pegelschrieb()
         {
