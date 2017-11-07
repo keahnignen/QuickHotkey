@@ -10,3 +10,15 @@ C:\Users\Kenan\source\repos\QuickKeys\QuickKeys\obj\Debug\QuickKeys.csproj.Gener
 C:\Users\Kenan\source\repos\QuickKeys\QuickKeys\obj\Debug\QuickKeys.csproj.CoreCompileInputs.cache
 C:\Users\Kenan\source\repos\QuickKeys\QuickKeys\obj\Debug\QuickKeys.exe
 C:\Users\Kenan\source\repos\QuickKeys\QuickKeys\obj\Debug\QuickKeys.pdb
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\bin\Debug\QuickKeys.exe.config
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\bin\Debug\QuickKeys.exe
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\bin\Debug\QuickKeys.pdb
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\bin\Debug\WindowsInput.dll
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\bin\Debug\WindowsInput.xml
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.csprojResolveAssemblyReference.cache
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.Form1.resources
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.Properties.Resources.resources
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.csproj.GenerateResource.Cache
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.csproj.CoreCompileInputs.cache
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.exe
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.pdb
