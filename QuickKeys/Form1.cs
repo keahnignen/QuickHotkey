@@ -2,20 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Net.Mime;
-using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
 using WindowsInput;
 using WindowsInput.Native;
-using Microsoft.Office.Interop.Word;
 
 namespace QuickKeys
 {
@@ -46,7 +40,6 @@ namespace QuickKeys
         private int shortTimeout = 50;
         private int longTimeOut = 4000;
         private int superlongTimeout = 8000;
-        private string docname;
 
         private void Pegelschrieb()
         {
@@ -106,20 +99,8 @@ namespace QuickKeys
 
         private void Distribution()
         {
-            docname = "Document 2017-11-07_07-58-14-791.docx";
-            for (int i = 0; i < 250; i++)
+            for (int i = 0; i < 170; i++)
             {
-
-                input.Keyboard.ModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_C);
-                Thread.Sleep(timeout);
-                AppendText(Clipboard.GetText() + "\r\n" + i + "\r\n");
-                //Thread.Sleep(timeout);
-                //input.Mouse.LeftButtonClick();
-                Thread.Sleep(timeout);
-                input.Keyboard.KeyPress(VirtualKeyCode.RIGHT);
-                Thread.Sleep(timeout);
-                input.Keyboard.KeyPress(VirtualKeyCode.RIGHT);
-                Thread.Sleep(timeout);
                 input.Keyboard.KeyPress(VirtualKeyCode.SPACE);
                 Thread.Sleep(timeout);
                 input.Mouse.RightButtonClick();
@@ -128,104 +109,19 @@ namespace QuickKeys
                 Thread.Sleep(timeout);
                 input.Keyboard.KeyPress(VirtualKeyCode.RETURN);
                 Thread.Sleep(superlongTimeout * 2);
-
-                input.Keyboard.KeyPress((VirtualKeyCode)Keys.LMenu); //ALT
+                MessageBox.Show("Cherety");
+                input.Keyboard.KeyPress(VirtualKeyCode.MENU); //ALT
                 Thread.Sleep(timeout);
                 input.Keyboard.KeyPress(VirtualKeyCode.VK_W);
                 Thread.Sleep(timeout);
-                input.Keyboard.KeyPress(VirtualKeyCode.VK_2);
+                input.Keyboard.KeyPress(VirtualKeyCode.VK_1);
                 Thread.Sleep(timeout);
-
-                input.Keyboard.KeyPress(VirtualKeyCode.RIGHT);
-                Thread.Sleep(timeout);
-                input.Keyboard.KeyPress(VirtualKeyCode.SPACE);
-                Thread.Sleep(timeout);
-                input.Mouse.RightButtonClick();
-                Thread.Sleep(timeout);
-                input.Keyboard.KeyPress(VirtualKeyCode.VK_A);
-                Thread.Sleep(timeout);
-                input.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-                Thread.Sleep(superlongTimeout * 2);
-
-                input.Keyboard.KeyPress((VirtualKeyCode)Keys.LMenu); //ALT
-                Thread.Sleep(timeout);
-                input.Keyboard.KeyPress(VirtualKeyCode.VK_W);
-                Thread.Sleep(timeout);
-                input.Keyboard.KeyPress(VirtualKeyCode.VK_2);
-                Thread.Sleep(timeout);
-
                 input.Keyboard.KeyPress(VirtualKeyCode.DOWN);
-                Thread.Sleep(timeout);
-                input.Keyboard.KeyPress(VirtualKeyCode.LEFT);
-                Thread.Sleep(timeout);
-                input.Keyboard.KeyPress(VirtualKeyCode.LEFT);
-                Thread.Sleep(timeout);
-                input.Keyboard.KeyPress(VirtualKeyCode.LEFT);
                 Thread.Sleep(timeout);
             }
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            AppendText("olalal");
-        }
-
-        private void AppendText(string text)
-        {
-            input.Keyboard.ModifiedKeyStroke((VirtualKeyCode)Keys.LWin, VirtualKeyCode.VK_R);
-            Thread.Sleep(shortTimeout);
-            string swag = "taskkill /f /im winword.exe";
-            Clipboard.SetText(swag);
-            input.Keyboard.ModifiedKeyStroke(VirtualKeyCode.CONTROL, VirtualKeyCode.VK_V);
-            Thread.Sleep(shortTimeout);
-            input.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-            Thread.Sleep(shortTimeout);
-            input.Keyboard.ModifiedKeyStroke((VirtualKeyCode)Keys.LMenu, VirtualKeyCode.TAB);
-            Thread.Sleep(shortTimeout);
-
-            string path = Environment.GetEnvironmentVariable("tmp") + "\\";
-
-            if (docname == null)
-            {
-                docname = textBox1.Text;
-            }
-
-            path += docname;
-            try
-            {
-                Microsoft.Office.Interop.Word._Application oWord = new Microsoft.Office.Interop.Word.Application();
-                oWord.Visible = false;
-                //MessageBox.Show(path);
-                //oWord.Documents.Open(path);
-                oWord.Documents.Open("\"" + path + "\"");
-                //MessageBox.Show("Could open");
-                oWord.ActiveDocument.Characters.Last.Select(); // Line 1
-                oWord.Selection.Collapse(); // Line 2
-                oWord.Selection.TypeText(text);
-                oWord.ActiveDocument.Save();
-                oWord.Quit();
-                //MessageBox.Show("The text is inserted.");
-            }
-            catch (Exception)
-            {
-                //MessageBox.Show("Please right click on the window and provide the path");
-                File.AppendAllText(path + "__QuickLog.txt", text);
-            }
-            // Document
-
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-
-            //Process.Start("cmd.exe", swag);
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
