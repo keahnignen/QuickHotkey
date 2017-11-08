@@ -40,7 +40,36 @@ namespace QuickKeys
             {
                 PDF();
             }
+            if (radioButton4.Checked)
+            {
+                Marker();
+            }
             button1.Enabled = true;
+        }
+
+        private void Marker()
+        {
+            while (true)
+            {
+                Cursor.Position = new Point(3072, 911);
+                Thread.Sleep(timeout);
+                input.Mouse.LeftButtonClick();
+                Thread.Sleep(timeout);
+                input.Keyboard.KeyPress(VirtualKeyCode.DOWN);
+                Thread.Sleep(timeout);
+
+                Cursor.Position = new Point(2177, 100);
+                Thread.Sleep(timeout);
+                input.Mouse.LeftButtonClick();
+                Thread.Sleep(timeout);
+                Cursor.Position = new Point(2899, 409);
+                Thread.Sleep(timeout);
+                input.Mouse.LeftButtonClick();
+                Thread.Sleep(timeout);
+
+
+                SaveInDocument();
+            }
         }
 
         private int timeout = 500;
@@ -127,13 +156,18 @@ namespace QuickKeys
                 input.Keyboard.KeyPress(VirtualKeyCode.RETURN);
                 Thread.Sleep(longTimeOut);
 
-                input.Mouse.RightButtonClick();
-                Thread.Sleep(timeout);
-                input.Keyboard.KeyPress(VirtualKeyCode.VK_A);
-                Thread.Sleep(timeout);
-                input.Keyboard.KeyPress(VirtualKeyCode.RETURN);
-                Thread.Sleep(superlongTimeout);
+                SaveInDocument();
             }
+        }
+
+        private void SaveInDocument()
+        {
+            input.Mouse.RightButtonClick();
+            Thread.Sleep(timeout);
+            input.Keyboard.KeyPress(VirtualKeyCode.VK_A);
+            Thread.Sleep(timeout);
+            input.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+            Thread.Sleep(superlongTimeout);
         }
 
         private void Distribution()
@@ -252,6 +286,11 @@ namespace QuickKeys
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
 
         }
