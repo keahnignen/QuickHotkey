@@ -15,10 +15,15 @@ C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\bin\Debug\QuickKeys.exe
 C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\bin\Debug\QuickKeys.pdb
 C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\bin\Debug\WindowsInput.dll
 C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\bin\Debug\WindowsInput.xml
-C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.csprojResolveAssemblyReference.cache
 C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.Form1.resources
 C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.Properties.Resources.resources
 C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.csproj.GenerateResource.Cache
-C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.csproj.CoreCompileInputs.cache
 C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.exe
 C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.pdb
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.csproj.CopyComplete
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\bin\Debug\FinishSound.wav
+C:\Users\Kenan\Documents\GitHub\QuickHotkey\QuickKeys\obj\Debug\QuickKeys.csprojAssemblyReference.cache
+\\norserver2\daten\Kenan\Software\Tools\2019-11-04_Quick\Debug\FinishSound.wav
+\\norserver2\daten\Kenan\Software\Tools\2019-11-04_Quick\Debug\QuickKeys.exe.config
+\\norserver2\daten\Kenan\Software\Tools\2019-11-04_Quick\Debug\QuickKeys.exe
+\\norserver2\daten\Kenan\Software\Tools\2019-11-04_Quick\Debug\QuickKeys.pdb
